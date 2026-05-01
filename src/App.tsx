@@ -3,7 +3,7 @@ import Hero from './components/Hero'
 import Services from './components/Services'
 import InteriorExecution from './components/InteriorExecution'
 import { StackedCardsSection } from './components/StackedCardsSection'
-import { ProjectsAndWhyUs } from './components/ProjectsAndWhyUs'
+import WhyChooseUs from './components/WhyChooseUs'
 import { ProjectsGallery } from './components/ProjectsGallery'
 import DMFurnitures from './components/DMFurnitures'
 import ContactSection from './components/ContactSection'
@@ -19,8 +19,8 @@ function App() {
       <Services />
       <InteriorExecution />
       <StackedCardsSection />
-      <ProjectsAndWhyUs />
       <ProjectsGallery />
+      <WhyChooseUs />
       <DMFurnitures />
       <ContactSection />
       <Footer />

@@ -63,7 +63,7 @@ export function ProjectsGallery() {
   const [ref, isInView] = useScrollAnimation(0.05);
 
   return (
-    <section id="projects-gallery" className="py-24 lg:py-32 bg-gray-50 overflow-hidden relative border-y border-gray-100">
+    <section id="projects" className="py-24 lg:py-32 bg-gray-50 overflow-hidden relative border-y border-gray-100">
       <div ref={ref} className="max-w-7xl mx-auto px-6 lg:px-8 mb-16 text-center">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -85,15 +85,19 @@ export function ProjectsGallery() {
       <div className="relative w-full flex overflow-hidden group py-4">
         <div className="animate-marquee flex space-x-8 px-4 w-max shrink-0">
           {projects.map((projectImages, idx) => (
-            <div key={`proj-${idx}`} className="w-[600px] h-[400px] shrink-0 grid grid-cols-4 grid-rows-4 gap-2 bg-white p-3 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300">
+            <div key={`proj-${idx}`} className="w-[600px] h-[400px] shrink-0 grid grid-cols-6 grid-rows-4 gap-2 bg-white p-3 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300">
               {projectImages.map((img, i) => {
                 let classes = 'rounded-xl object-cover w-full h-full';
                 let wrapClasses = '';
-                if (i === 0) wrapClasses = 'col-span-2 row-span-4';
-                else if (i === 1) wrapClasses = 'col-span-2 row-span-2';
-                else if (i === 2) wrapClasses = 'col-span-1 row-span-2';
-                else if (i === 3) wrapClasses = 'col-span-1 row-span-2';
-                else wrapClasses = 'col-span-2 row-span-2'; // fallback or adjust if < 5
+                if (projectImages.length === 5) {
+                  if (i === 0) wrapClasses = 'col-span-4 row-span-4';
+                  else wrapClasses = 'col-span-2 row-span-1';
+                } else if (projectImages.length === 3) {
+                  if (i === 0) wrapClasses = 'col-span-4 row-span-4';
+                  else wrapClasses = 'col-span-2 row-span-2';
+                } else {
+                  wrapClasses = 'col-span-2 row-span-2';
+                }
                 
                 return (
                   <div key={i} className={`overflow-hidden relative group/img ${wrapClasses}`}>
@@ -108,15 +112,19 @@ export function ProjectsGallery() {
         {/* Duplicate for seamless looping */}
         <div className="animate-marquee flex space-x-8 px-4 w-max shrink-0" aria-hidden="true">
           {projects.map((projectImages, idx) => (
-            <div key={`dup-${idx}`} className="w-[600px] h-[400px] shrink-0 grid grid-cols-4 grid-rows-4 gap-2 bg-white p-3 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300">
+            <div key={`dup-${idx}`} className="w-[600px] h-[400px] shrink-0 grid grid-cols-6 grid-rows-4 gap-2 bg-white p-3 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300">
               {projectImages.map((img, i) => {
                 let classes = 'rounded-xl object-cover w-full h-full';
                 let wrapClasses = '';
-                if (i === 0) wrapClasses = 'col-span-2 row-span-4';
-                else if (i === 1) wrapClasses = 'col-span-2 row-span-2';
-                else if (i === 2) wrapClasses = 'col-span-1 row-span-2';
-                else if (i === 3) wrapClasses = 'col-span-1 row-span-2';
-                else wrapClasses = 'col-span-2 row-span-2';
+                if (projectImages.length === 5) {
+                  if (i === 0) wrapClasses = 'col-span-4 row-span-4';
+                  else wrapClasses = 'col-span-2 row-span-1';
+                } else if (projectImages.length === 3) {
+                  if (i === 0) wrapClasses = 'col-span-4 row-span-4';
+                  else wrapClasses = 'col-span-2 row-span-2';
+                } else {
+                  wrapClasses = 'col-span-2 row-span-2';
+                }
                 
                 return (
                   <div key={i} className={`overflow-hidden relative group/img ${wrapClasses}`}>
