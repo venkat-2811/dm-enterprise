@@ -82,9 +82,9 @@ export function ProjectsGallery() {
       </div>
 
       <div className="relative w-full flex overflow-hidden group py-4">
-        <div className="animate-marquee flex space-x-4 sm:space-x-6 lg:space-x-8 px-2 sm:px-4 w-max shrink-0">
+        <div className="animate-marquee flex space-x-8 px-4 w-max shrink-0">
           {projects.map((projectImages, idx) => (
-            <div key={`proj-${idx}`} className="w-[280px] sm:w-[400px] md:w-[500px] lg:w-[600px] h-[200px] sm:h-[280px] md:h-[350px] lg:h-[400px] shrink-0 grid grid-cols-6 grid-rows-4 gap-1 sm:gap-2 bg-white p-2 sm:p-3 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300">
+            <div key={`proj-${idx}`} className="w-[85vw] max-w-[600px] aspect-[3/2] shrink-0 grid grid-cols-6 grid-rows-4 gap-2 bg-white p-3 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300">
               {projectImages.map((img, i) => {
                 let classes = 'rounded-xl object-cover w-full h-full';
                 let wrapClasses = '';
@@ -109,9 +109,9 @@ export function ProjectsGallery() {
         </div>
         
         {/* Duplicate for seamless looping */}
-        <div className="animate-marquee flex space-x-4 sm:space-x-6 lg:space-x-8 px-2 sm:px-4 w-max shrink-0" aria-hidden="true">
+        <div className="animate-marquee flex space-x-8 px-4 w-max shrink-0" aria-hidden="true">
           {projects.map((projectImages, idx) => (
-            <div key={`dup-${idx}`} className="w-[280px] sm:w-[400px] md:w-[500px] lg:w-[600px] h-[200px] sm:h-[280px] md:h-[350px] lg:h-[400px] shrink-0 grid grid-cols-6 grid-rows-4 gap-1 sm:gap-2 bg-white p-2 sm:p-3 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300">
+            <div key={`dup-${idx}`} className="w-[85vw] max-w-[600px] aspect-[3/2] shrink-0 grid grid-cols-6 grid-rows-4 gap-2 bg-white p-3 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300">
               {projectImages.map((img, i) => {
                 let classes = 'rounded-xl object-cover w-full h-full';
                 let wrapClasses = '';

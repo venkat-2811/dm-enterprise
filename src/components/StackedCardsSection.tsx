@@ -11,17 +11,17 @@ const products = [
 
 function MarqueeCard({ product }: { product: typeof products[number] }) {
   return (
-    <div className="shrink-0 w-56 sm:w-64 md:w-72 bg-white rounded-2xl shadow-[0_2px_12px_rgba(0,0,0,0.06)] overflow-hidden group cursor-pointer hover:shadow-[0_8px_30px_rgba(0,0,0,0.1)] transition-shadow duration-300">
-      <div className="h-36 sm:h-40 md:h-48 bg-grey overflow-hidden">
+    <div className="shrink-0 w-64 sm:w-72 bg-white rounded-2xl shadow-[0_2px_12px_rgba(0,0,0,0.06)] overflow-hidden group cursor-pointer hover:shadow-[0_8px_30px_rgba(0,0,0,0.1)] transition-shadow duration-300">
+      <div className="h-48 bg-grey overflow-hidden">
         <img
           src={product.image}
           alt={product.title}
-          className="w-full h-full object-contain p-3 sm:p-4 group-hover:scale-110 transition-transform duration-500"
+          className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-500"
         />
       </div>
-      <div className="p-3 sm:p-4">
-        <h3 className="text-sm sm:text-base font-bold text-text-dark mb-1">{product.title}</h3>
-        <p className="text-xs sm:text-sm text-text-muted">{product.description}</p>
+      <div className="p-4">
+        <h3 className="text-base font-bold text-text-dark mb-1">{product.title}</h3>
+        <p className="text-sm text-text-muted">{product.description}</p>
       </div>
     </div>
   )

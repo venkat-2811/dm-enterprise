@@ -74,7 +74,7 @@ export default function Hero() {
               href="#contact"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
-              className="px-6 sm:px-8 py-4 min-h-[52px] bg-accent text-white font-semibold rounded-2xl shadow-[0_4px_20px_rgba(249,115,22,0.4)] hover:shadow-[0_8px_30px_rgba(249,115,22,0.5)] transition-shadow"
+              className="px-8 py-4 bg-accent text-white font-semibold rounded-2xl shadow-[0_4px_20px_rgba(249,115,22,0.4)] hover:shadow-[0_8px_30px_rgba(249,115,22,0.5)] transition-shadow"
             >
               Get a Quote
             </motion.a>
@@ -82,7 +82,7 @@ export default function Hero() {
               href="#projects"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
-              className="px-6 sm:px-8 py-4 min-h-[52px] border-2 border-white/30 text-white font-semibold rounded-2xl hover:border-white/60 hover:bg-white/10 backdrop-blur-sm transition-all duration-200"
+              className="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-2xl hover:border-white/60 hover:bg-white/10 backdrop-blur-sm transition-all duration-200"
             >
               View Projects
             </motion.a>
@@ -92,13 +92,13 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 0.8 }}
-            className="mt-14 flex items-center gap-8 text-sm"
+            className="mt-14 flex flex-wrap items-center gap-6 sm:gap-8 text-sm"
           >
             <div className="flex items-center gap-2">
               <span className="text-2xl font-bold text-white">500+</span>
               <span className="text-white/50">Projects<br />Delivered</span>
             </div>
-            <div className="w-px h-10 bg-white/20" />
+            <div className="w-px h-10 bg-white/20 hidden sm:block" />
             <div className="flex items-center gap-2">
               <span className="text-2xl font-bold text-white">10+</span>
               <span className="text-white/50">Years of<br />Experience</span>

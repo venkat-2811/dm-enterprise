@@ -35,7 +35,7 @@ export default function InteriorExecution() {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className="absolute -bottom-4 -right-2 sm:-bottom-6 sm:-right-4 lg:-right-8 bg-white rounded-2xl p-4 sm:p-5 shadow-[0_10px_40px_rgba(0,0,0,0.08)]"
+              className="absolute -bottom-6 -right-2 sm:-right-4 lg:-right-8 bg-white rounded-2xl p-5 shadow-[0_10px_40px_rgba(0,0,0,0.08)]"
             >
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center">

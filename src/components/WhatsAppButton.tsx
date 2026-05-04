@@ -12,7 +12,7 @@ export default function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"
-      className="fixed bottom-6 left-6 z-50 group"
+      className="fixed bottom-4 left-4 sm:bottom-6 sm:left-6 z-50 group"
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       transition={{ delay: 1.5, type: 'spring', stiffness: 200, damping: 15 }}
@@ -24,11 +24,11 @@ export default function WhatsAppButton() {
       <motion.div
         whileHover={{ scale: 1.15 }}
         whileTap={{ scale: 0.9 }}
-        className="relative w-14 h-14 bg-[#25D366] rounded-full shadow-[0_6px_20px_rgba(37,211,102,0.4)] flex items-center justify-center"
+        className="relative w-12 h-12 sm:w-14 sm:h-14 bg-[#25D366] rounded-full shadow-[0_6px_20px_rgba(37,211,102,0.4)] flex items-center justify-center"
       >
         {/* WhatsApp SVG icon */}
         <svg
-          className="w-7 h-7 text-white"
+          className="w-6 h-6 sm:w-7 sm:h-7 text-white"
           viewBox="0 0 24 24"
           fill="currentColor"
         >

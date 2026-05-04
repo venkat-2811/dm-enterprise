@@ -129,8 +129,8 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-24 lg:py-32 bg-white relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/3 rounded-full -translate-y-1/2 translate-x-1/3 pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-accent/3 rounded-full translate-y-1/2 -translate-x-1/3 pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[420px] h-[420px] sm:w-[520px] sm:h-[520px] lg:w-[600px] lg:h-[600px] bg-primary/3 rounded-full -translate-y-1/2 translate-x-1/3 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[280px] h-[280px] sm:w-[340px] sm:h-[340px] lg:w-[400px] lg:h-[400px] bg-accent/3 rounded-full translate-y-1/2 -translate-x-1/3 pointer-events-none" />
 
       <div ref={ref} className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
         {/* Header */}
@@ -161,7 +161,7 @@ export default function ContactSection() {
           >
             <form
               onSubmit={handleSubmit}
-              className="bg-grey rounded-3xl p-8 lg:p-10 shadow-[0_4px_20px_rgba(0,0,0,0.04)]"
+              className="bg-grey rounded-3xl p-6 sm:p-8 lg:p-10 shadow-[0_4px_20px_rgba(0,0,0,0.04)]"
             >
               <div className="grid sm:grid-cols-2 gap-5">
                 <div>
@@ -176,7 +176,7 @@ export default function ContactSection() {
                     onChange={handleChange}
                     required
                     placeholder="John Doe"
-                    className="w-full px-4 py-3.5 min-h-[48px] bg-white border border-gray-200 rounded-xl text-sm text-text-dark placeholder:text-text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-200"
+                    className="w-full min-h-[48px] px-4 py-3.5 bg-white border border-gray-200 rounded-xl text-sm text-text-dark placeholder:text-text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-200"
                   />
                 </div>
                 <div>
@@ -191,7 +191,7 @@ export default function ContactSection() {
                     onChange={handleChange}
                     required
                     placeholder="john@company.com"
-                    className="w-full px-4 py-3.5 min-h-[48px] bg-white border border-gray-200 rounded-xl text-sm text-text-dark placeholder:text-text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-200"
+                    className="w-full min-h-[48px] px-4 py-3.5 bg-white border border-gray-200 rounded-xl text-sm text-text-dark placeholder:text-text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-200"
                   />
                 </div>
                 <div>
@@ -205,7 +205,7 @@ export default function ContactSection() {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="+91 98765 43210"
-                    className="w-full px-4 py-3.5 min-h-[48px] bg-white border border-gray-200 rounded-xl text-sm text-text-dark placeholder:text-text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-200"
+                    className="w-full min-h-[48px] px-4 py-3.5 bg-white border border-gray-200 rounded-xl text-sm text-text-dark placeholder:text-text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-200"
                   />
                 </div>
                 <div>
@@ -219,7 +219,7 @@ export default function ContactSection() {
                     value={formData.company}
                     onChange={handleChange}
                     placeholder="Company name"
-                    className="w-full px-4 py-3.5 min-h-[48px] bg-white border border-gray-200 rounded-xl text-sm text-text-dark placeholder:text-text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-200"
+                    className="w-full min-h-[48px] px-4 py-3.5 bg-white border border-gray-200 rounded-xl text-sm text-text-dark placeholder:text-text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-200"
                   />
                 </div>
               </div>
@@ -246,7 +246,7 @@ export default function ContactSection() {
                   disabled={status === 'sending'}
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
-                  className="inline-flex items-center gap-2.5 px-8 py-4 min-h-[52px] bg-primary text-white font-semibold rounded-2xl shadow-[0_4px_15px_rgba(30,58,138,0.3)] hover:shadow-[0_8px_30px_rgba(30,58,138,0.4)] transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed"
+                  className="inline-flex items-center gap-2.5 px-8 py-4 bg-primary text-white font-semibold rounded-2xl shadow-[0_4px_15px_rgba(30,58,138,0.3)] hover:shadow-[0_8px_30px_rgba(30,58,138,0.4)] transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed"
                 >
                   {status === 'sending' ? (
                     <>
@@ -307,7 +307,7 @@ export default function ContactSection() {
             </div>
 
             {/* Contact Info Cards */}
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {contactInfo.map((item, i) => {
                 const Icon = item.icon
                 const inner = (

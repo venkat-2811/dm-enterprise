@@ -16,30 +16,30 @@ interface CircularRevealHeadingProps {
 
 const sizeConfig = {
     sm: {
-        container: 'h-[200px] w-[200px] sm:h-[250px] sm:w-[250px] md:h-[300px] md:w-[300px]',
-        fontSize: 'text-[10px] sm:text-xs md:text-xs',
-        tracking: 'tracking-[0.2em] sm:tracking-[0.25em] md:tracking-[0.25em]',
-        radius: 100,
-        gap: 45,
-        imageSize: 'w-[70%] h-[70%] sm:w-[75%] sm:h-[75%]',
+        container: 'h-[300px] w-[300px]',
+        fontSize: 'text-xs',
+        tracking: 'tracking-[0.25em]',
+        radius: 160,
+        gap: 40,
+        imageSize: 'w-[75%] h-[75%]',
         textStyle: 'font-medium'
     },
     md: {
-        container: 'h-[250px] w-[250px] sm:h-[320px] sm:w-[320px] md:h-[400px] md:w-[400px]',
-        fontSize: 'text-[10px] sm:text-xs md:text-sm',
-        tracking: 'tracking-[0.2em] sm:tracking-[0.25em] md:tracking-[0.3em]',
-        radius: 110,
-        gap: 35,
-        imageSize: 'w-[70%] h-[70%] sm:w-[75%] sm:h-[75%]',
+        container: 'h-[400px] w-[400px]',
+        fontSize: 'text-sm',
+        tracking: 'tracking-[0.3em]',
+        radius: 160,
+        gap: 30,
+        imageSize: 'w-[75%] h-[75%]',
         textStyle: 'font-medium',
     },
     lg: {
-        container: 'h-[300px] w-[300px] sm:h-[400px] sm:w-[400px] md:h-[500px] md:w-[500px]',
-        fontSize: 'text-[10px] sm:text-sm md:text-base',
-        tracking: 'tracking-[0.2em] sm:tracking-[0.3em] md:tracking-[0.35em]',
-        radius: 120,
-        gap: 25,
-        imageSize: 'w-[70%] h-[70%] sm:w-[75%] sm:h-[75%]',
+        container: 'h-[500px] w-[500px]',
+        fontSize: 'text-base',
+        tracking: 'tracking-[0.35em]',
+        radius: 160,
+        gap: 20,
+        imageSize: 'w-[75%] h-[75%]',
         textStyle: 'font-medium'
     }
 };
@@ -121,8 +121,6 @@ export const CircularRevealHeading = ({
                         )}
                         onMouseEnter={() => imagesLoaded && setActiveImage(item.image)}
                         onMouseLeave={() => setActiveImage(null)}
-                        onTouchStart={() => imagesLoaded && setActiveImage(item.image)}
-                        onTouchEnd={() => setActiveImage(null)}
                         style={{
                             filter: 'url(#textShadow)',
                             transition: 'all 0.3s ease'
