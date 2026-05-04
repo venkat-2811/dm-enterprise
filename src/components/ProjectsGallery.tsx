@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion'
 import { useScrollAnimation } from './useScrollAnimation'
-import React from 'react'
 
 const projects = [
   [
