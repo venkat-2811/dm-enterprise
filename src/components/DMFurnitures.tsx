@@ -57,10 +57,10 @@ export default function DMFurnitures() {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className="absolute -bottom-5 -right-3 lg:-right-6 bg-accent text-white rounded-2xl px-5 py-3 shadow-[0_8px_30px_rgba(249,115,22,0.35)]"
+              className="absolute -bottom-4 -right-2 sm:-bottom-5 sm:-right-3 lg:-right-6 bg-accent text-white rounded-2xl px-4 py-2 sm:px-5 sm:py-3 shadow-[0_8px_30px_rgba(249,115,22,0.35)]"
             >
-              <div className="text-lg font-extrabold">DM</div>
-              <div className="text-[10px] font-medium tracking-wider opacity-90 uppercase">Furnitures</div>
+              <div className="text-base sm:text-lg font-extrabold">DM</div>
+              <div className="text-[9px] sm:text-[10px] font-medium tracking-wider opacity-90 uppercase">Furnitures</div>
             </motion.div>
 
             {/* Decorative ring */}

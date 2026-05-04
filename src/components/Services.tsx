@@ -75,13 +75,13 @@ export default function Services() {
               items={circularItems}
               centerText={
                 <div className="text-center">
-                  <img src="/images/logo.png" alt="DM Enterprises" className="h-10 w-auto mx-auto mb-1" />
-                  <div className="text-xs font-medium text-[#444444] tracking-wider">
+                  <img src="/images/logo.png" alt="DM Enterprises" className="h-8 w-auto mx-auto mb-1 sm:h-10" />
+                  <div className="text-[9px] sm:text-xs font-medium text-[#444444] tracking-wider">
                     INTERIORS & MODULARS
                   </div>
                 </div>
               }
-              size="md"
+              size="sm"
             />
           </motion.div>
 

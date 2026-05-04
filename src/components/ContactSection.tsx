@@ -176,7 +176,7 @@ export default function ContactSection() {
                     onChange={handleChange}
                     required
                     placeholder="John Doe"
-                    className="w-full px-4 py-3.5 bg-white border border-gray-200 rounded-xl text-sm text-text-dark placeholder:text-text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-200"
+                    className="w-full px-4 py-3.5 min-h-[48px] bg-white border border-gray-200 rounded-xl text-sm text-text-dark placeholder:text-text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-200"
                   />
                 </div>
                 <div>
@@ -191,7 +191,7 @@ export default function ContactSection() {
                     onChange={handleChange}
                     required
                     placeholder="john@company.com"
-                    className="w-full px-4 py-3.5 bg-white border border-gray-200 rounded-xl text-sm text-text-dark placeholder:text-text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-200"
+                    className="w-full px-4 py-3.5 min-h-[48px] bg-white border border-gray-200 rounded-xl text-sm text-text-dark placeholder:text-text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-200"
                   />
                 </div>
                 <div>
@@ -205,7 +205,7 @@ export default function ContactSection() {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="+91 98765 43210"
-                    className="w-full px-4 py-3.5 bg-white border border-gray-200 rounded-xl text-sm text-text-dark placeholder:text-text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-200"
+                    className="w-full px-4 py-3.5 min-h-[48px] bg-white border border-gray-200 rounded-xl text-sm text-text-dark placeholder:text-text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-200"
                   />
                 </div>
                 <div>
@@ -219,7 +219,7 @@ export default function ContactSection() {
                     value={formData.company}
                     onChange={handleChange}
                     placeholder="Company name"
-                    className="w-full px-4 py-3.5 bg-white border border-gray-200 rounded-xl text-sm text-text-dark placeholder:text-text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-200"
+                    className="w-full px-4 py-3.5 min-h-[48px] bg-white border border-gray-200 rounded-xl text-sm text-text-dark placeholder:text-text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-200"
                   />
                 </div>
               </div>
@@ -246,7 +246,7 @@ export default function ContactSection() {
                   disabled={status === 'sending'}
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
-                  className="inline-flex items-center gap-2.5 px-8 py-4 bg-primary text-white font-semibold rounded-2xl shadow-[0_4px_15px_rgba(30,58,138,0.3)] hover:shadow-[0_8px_30px_rgba(30,58,138,0.4)] transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed"
+                  className="inline-flex items-center gap-2.5 px-8 py-4 min-h-[52px] bg-primary text-white font-semibold rounded-2xl shadow-[0_4px_15px_rgba(30,58,138,0.3)] hover:shadow-[0_8px_30px_rgba(30,58,138,0.4)] transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed"
                 >
                   {status === 'sending' ? (
                     <>
@@ -293,7 +293,7 @@ export default function ContactSection() {
             className="lg:col-span-2 flex flex-col gap-5"
           >
             {/* Google Maps */}
-            <div className="rounded-3xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] h-64 lg:h-72">
+            <div className="rounded-3xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] h-56 sm:h-64 lg:h-72">
               <iframe
                 title="DM Enterprises Location"
                 src="https://maps.google.com/maps?q=IDA,%20Near%20BEL%20Circle,%20Venkataramana%20Colony,%20Mallapur,%20Secunderabad,%20Telangana%20500076&t=&z=15&ie=UTF8&iwloc=&output=embed"

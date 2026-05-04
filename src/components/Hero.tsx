@@ -74,7 +74,7 @@ export default function Hero() {
               href="#contact"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
-              className="px-8 py-4 bg-accent text-white font-semibold rounded-2xl shadow-[0_4px_20px_rgba(249,115,22,0.4)] hover:shadow-[0_8px_30px_rgba(249,115,22,0.5)] transition-shadow"
+              className="px-6 sm:px-8 py-4 min-h-[52px] bg-accent text-white font-semibold rounded-2xl shadow-[0_4px_20px_rgba(249,115,22,0.4)] hover:shadow-[0_8px_30px_rgba(249,115,22,0.5)] transition-shadow"
             >
               Get a Quote
             </motion.a>
@@ -82,7 +82,7 @@ export default function Hero() {
               href="#projects"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
-              className="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-2xl hover:border-white/60 hover:bg-white/10 backdrop-blur-sm transition-all duration-200"
+              className="px-6 sm:px-8 py-4 min-h-[52px] border-2 border-white/30 text-white font-semibold rounded-2xl hover:border-white/60 hover:bg-white/10 backdrop-blur-sm transition-all duration-200"
             >
               View Projects
             </motion.a>

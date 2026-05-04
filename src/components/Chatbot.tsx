@@ -290,8 +290,7 @@ export default function Chatbot() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ type: 'spring', stiffness: 300, damping: 25 }}
-            className="fixed bottom-24 right-6 z-50 w-[380px] max-w-[calc(100vw-2rem)] bg-white rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.15)] overflow-hidden flex flex-col"
-            style={{ height: '520px' }}
+            className="fixed bottom-0 right-0 sm:bottom-24 sm:right-6 z-50 w-full sm:w-[380px] max-w-[calc(100vw-2rem)] sm:max-w-[380px] h-[100dvh] sm:h-[520px] bg-white rounded-t-3xl sm:rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.15)] overflow-hidden flex flex-col"
           >
             {/* Header */}
             <div className="bg-gradient-to-r from-primary to-primary-light px-6 py-4 flex items-center gap-3 shrink-0">
