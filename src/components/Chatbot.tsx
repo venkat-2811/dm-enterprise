@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { MessageCircle, X, Send, Bot, User, Sparkles } from 'lucide-react'
 
-const TO_EMAIL = 'contact@dmenterprises.in'
+const TO_EMAIL = 'venkatakarthiksai.s@gmail.com'
 
 interface Message {
   id: number

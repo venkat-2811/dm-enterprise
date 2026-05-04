@@ -22,7 +22,7 @@ interface FormData {
 
 type FormStatus = 'idle' | 'sending' | 'success' | 'error'
 
-const TO_EMAIL = 'contact@dmenterprises.in'
+const TO_EMAIL = 'venkatakarthiksai.s@gmail.com'
 
 async function sendEmail(data: FormData) {
   const html = `
