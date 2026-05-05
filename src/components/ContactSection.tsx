@@ -76,15 +76,15 @@ const contactInfo = [
   {
     icon: Phone,
     label: 'Call Us',
-    value: '+91 98765 43210',
-    href: 'tel:+919876543210',
+    value: '+91 7032174792',
+    href: 'tel:+917032174792',
     color: 'bg-green-500/10 text-green-500',
   },
   {
     icon: Mail,
     label: 'Email Us',
-    value: 'contact@dmenterprises.in',
-    href: 'mailto:contact@dmenterprises.in',
+    value: 'dmenterprises999@gmail.com',
+    href: 'mailto:dmenterprises999@gmail.com',
     color: 'bg-blue-500/10 text-blue-500',
   },
   {
@@ -204,7 +204,7 @@ export default function ContactSection() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder="+91 98765 43210"
+                    placeholder="+91 7032174792"
                     className="w-full min-h-[48px] px-4 py-3.5 bg-white border border-gray-200 rounded-xl text-sm text-text-dark placeholder:text-text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-200"
                   />
                 </div>
@@ -296,7 +296,7 @@ export default function ContactSection() {
             <div className="rounded-3xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] h-56 sm:h-64 lg:h-72">
               <iframe
                 title="DM Enterprises Location"
-                src="https://maps.google.com/maps?q=IDA,%20Near%20BEL%20Circle,%20Venkataramana%20Colony,%20Mallapur,%20Secunderabad,%20Telangana%20500076&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=17.4375594,78.5741425&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

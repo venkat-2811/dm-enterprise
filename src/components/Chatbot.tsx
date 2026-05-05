@@ -72,7 +72,7 @@ const chatFlow: ChatStep[] = [
     question: "And your phone number? (optional — helps us reach you faster)",
     field: 'phone',
     type: 'text',
-    placeholder: '+91 98765 43210',
+    placeholder: '+91 7032174792',
   },
   {
     question: "Anything else you'd like to tell us about your project?",
@@ -216,7 +216,7 @@ export default function Chatbot() {
             ...prev,
             {
               id: Date.now() + 1,
-              text: `Thank you for your interest! We couldn't save your details automatically, but our team can be reached at contact@dmenterprises.in or +91 98765 43210.`,
+              text: `Thank you for your interest! We couldn't save your details automatically, but our team can be reached at dmenterprises999@gmail.com or +91 7032174792.`,
               sender: 'bot',
               timestamp: new Date(),
             },

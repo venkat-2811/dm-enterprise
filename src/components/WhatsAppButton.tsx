@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-const WHATSAPP_NUMBER = '919876543210'
+const WHATSAPP_NUMBER = '917032174792'
 const WHATSAPP_MESSAGE = encodeURIComponent(
   'Hi DM Enterprises! I\'m interested in your office furniture and interior solutions. Can you help me?'
 )

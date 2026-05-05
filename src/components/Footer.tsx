@@ -93,19 +93,19 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-accent shrink-0" />
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+917032174792"
                   className="text-white/60 hover:text-white text-sm transition-colors"
                 >
-                  +91 98765 43210
+                  +91 7032174792
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-accent shrink-0" />
                 <a
-                  href="mailto:contact@dmenterprises.in"
+                  href="mailto:dmenterprises999@gmail.com"
                   className="text-white/60 hover:text-white text-sm transition-colors"
                 >
-                  contact@dmenterprises.in
+                  dmenterprises999@gmail.com
                 </a>
               </li>
             </ul>

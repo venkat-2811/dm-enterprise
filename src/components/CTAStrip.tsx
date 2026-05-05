@@ -25,7 +25,7 @@ export default function CTAStrip() {
             Let&apos;s discuss your requirements and create a workspace that drives productivity.
           </p>
           <motion.a
-            href="mailto:contact@dmenterprises.in"
+            href="mailto:dmenterprises999@gmail.com"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
             className="inline-flex items-center gap-2 mt-10 px-10 py-4 bg-white text-primary font-bold rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.15)] hover:shadow-[0_8px_40px_rgba(0,0,0,0.2)] transition-shadow text-lg"
